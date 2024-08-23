@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from "react"
+import { Fragment } from "react"
 import Card from "./Card"
 import Button from "./Button"
 import ReactDOM from 'react-dom'
@@ -25,7 +25,6 @@ const ModalOverlay = (props) => {
 }
 
 const ErrorModal = (props) => {
-
     const { error, onConfirm } = props;
     const { title, message } = error;
 
