@@ -1,4 +1,4 @@
-import { Fragment } from "react"
+import { Fragment, useEffect } from "react"
 import Card from "./Card"
 import Button from "./Button"
 import ReactDOM from 'react-dom'
@@ -13,8 +13,8 @@ const Backdrop = (props) => {
 const ModalOverlay = (props) => {
     return (
         <div className="errorModal">
-            <Card className="w-[36rem] p-0 z-20">
-                <header className="bg-orange-500 text-white p-4 rounded-t-xl text-xl text-center">{props.title}</header>
+            <Card className="w-[36rem] p-[0] z-20">
+                <header className="bg-orange-500 text-white rounded-t-xl p-4 text-xl text-center">{props.title}</header>
                 <section className="p-4">{props.message}</section>
                 <footer className="p-4 flex justify-end">
                     <Button className="w-32" onClick={props.onConfirm}>Tamam</Button>

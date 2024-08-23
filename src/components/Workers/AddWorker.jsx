@@ -51,7 +51,7 @@ function AddWorker(props) {
       {
         id: Math.random(),
         name: enteredName,
-        jobTitle: enteredJob,
+        job: enteredJob,
         wage: enteredWage
       }
     ])

@@ -27,7 +27,7 @@ function WorkerList(props) {
                         onClick={() => deleteWorker(worker.id)}
                     >
                         <span className="col-span-2">{worker.name}</span>
-                        <span className="col-span-2">{worker.jobTitle}</span>
+                        <span className="col-span-2">{worker.job}</span>
                         <span className="text-rose-700 font-medium">{worker.wage} ₺</span>
                     </li>))}
                 <li className="grid grid-cols-5 p-2 font-bold bg-gray-100 mt-4">
